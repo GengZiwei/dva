@@ -1,11 +1,10 @@
 import dva from 'dva';
 import './index.css';
+import './services/css'
 import { browserHistory } from 'dva/router';
 // 1. Initialize
 const app = dva({
-    history: browserHistory,
-      initialState : {
-      }
+    history: browserHistory
 });
 
 // 2. Plugins

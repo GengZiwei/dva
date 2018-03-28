@@ -1,4 +1,4 @@
-import * as userService from '../services/user';
+import * as userService from '../services/api';
 
 
 export default {
