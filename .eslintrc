@@ -1,3 +1,24 @@
 {
-  "extends": "umi"
+  "extends": "umi",
+  "rules":{
+    "no-console": 1,
+    "no-var": 2,
+    "semi": 0,
+    "no-irregular-whitespace": 0,
+    "no-trailing-spaces": 2,
+    "eol-last": 0,
+    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
+    "no-alert": 2,
+    "no-const-assign": 2,
+    "no-cond-assign":2,
+    "no-duplicate-case": 2,
+    "no-dupe-args": 2,
+    "no-redeclare": 2,
+    "no-spaced-func": 2,
+    "no-undef": 2,
+    "comma-dangle": 2,
+    "jsx-quotes": [2, "prefer-double"],
+    "no-mixed-spaces-and-tabs": 1,
+    "arrow-spacing": 1
+  }
 }

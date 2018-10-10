@@ -1,4 +1,4 @@
-import screenfull from "screenfull";
+import screenfull from "screenfull"; // 全局插件
   export function onScreenfull(event,type,target) {
     switch (type) {
       case "div":

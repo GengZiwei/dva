@@ -3,7 +3,7 @@ import * as userService from '../services/api';
 
 export default {
   namespace: 'example',
-  state: 
+  state:
     {
       payload:"",
       number:0
@@ -29,13 +29,13 @@ export default {
       const temp = yield call(userService.getUserData, {});
       yield put({
         type: 'dealData',
-        payload:temp
+        payload: temp
       });
     }
   },
   subscriptions: {
     setup({ dispatch, history }) {  // eslint-disable-line
-     return history.listen( ({pathname, query}) => {
+     return history.listen( ({pathname}) => {
         if(pathname === '/') {
           dispatch({
             type: 'getData',
@@ -45,6 +45,6 @@ export default {
           })
         }
       })
-    },
-  },
+    }
+  }
 };

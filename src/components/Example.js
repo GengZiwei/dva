@@ -1,9 +1,9 @@
 import React from 'react';
-const Example = (add) => {
+
+
+const Example = (props) => {
   return (
-    <div>
-      <div>这是第{add.add.id}</div><br/>
-    </div>
+    <div>这是{props.add.username}</div>
   );
 };
 
